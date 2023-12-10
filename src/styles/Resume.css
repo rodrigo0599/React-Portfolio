@@ -1,0 +1,45 @@
+.resume {
+  font-family: 'Arial', sans-serif; /* Updated font family */
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  color: #444; /* Slightly darker for better readability */
+}
+
+.resume__section-title {
+  font-size: 1.6em; /* Slightly larger */
+  margin-bottom: 15px;
+  color: #0056b3; /* A bit more color */
+}
+
+.resume__section-content {
+  font-size: 1.1em; /* Slightly larger for readability */
+  line-height: 1.6;
+}
+
+/* Style for icons */
+.icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #0056b3; /* Matching the section titles */
+}
+
+/* Responsive design improvements */
+@media screen and (max-width: 600px) {
+  .resume {
+    padding: 10px;
+    max-width: 100%;
+  }
+  .resume__section-title {
+    font-size: 1.4em;
+  }
+  /* Additional responsive adjustments as needed */
+}
+
+/* Print styles */
+@media print {
+  .resume {
+    color: black;
+  }
+  /* Other print-specific styles */
+}
