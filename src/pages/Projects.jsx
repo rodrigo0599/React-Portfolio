@@ -9,11 +9,19 @@ function Project() {
     <div className="projects">
       <h1> My Personal Projects</h1>
       <div className="projectList">
-      {ProjectList.map((project, idx) => {
-  return (
-    <ProjectItem key={idx} id={idx} name={project.name} image={project.image} />
-  );
-})}
+        {ProjectList.map((project, idx) => {
+          return (
+            <ProjectItem 
+              key={idx} 
+              id={idx} 
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              link={project.link}
+              repo={project.repo}
+            />
+          );
+        })}
       </div>
     </div>
   );

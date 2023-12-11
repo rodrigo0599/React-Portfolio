@@ -26,3 +26,24 @@
   font-size: 60px;
   color: #3e497a;
 }
+
+.project a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #3e497a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background-color: #2c365d;
+}
+
+.project GitHubIcon {
+  margin-top: 20px;
+  cursor: pointer;
+}
+

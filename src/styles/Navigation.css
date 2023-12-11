@@ -86,3 +86,9 @@
     flex-direction: row;
   }
 }
+
+.name {
+  font-size: 25px;
+  color: white;
+  margin-right: auto;
+}

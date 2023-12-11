@@ -6,19 +6,19 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer__social">
-                <a href=""
-                    className="https://github.com/rodrigo0599"
+                <a href="https://github.com/rodrigo0599"
+                    className="footer__link"
                     target="_blank"
                     rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
-                <a href=""
+                <a href="https://www.linkedin.com/in/rodrigo-rivera-56570a271/"
                     className="footer__link"
                     target="_blank"
                     rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
-                <a href=""
+                <a href="https://www.facebook.com/profile.php?id=100028630680630"
                     className="footer__link"
                     target="_blank"
                     rel="noopener noreferrer">

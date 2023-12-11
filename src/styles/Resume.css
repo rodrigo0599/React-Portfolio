@@ -1,45 +1,112 @@
-.resume {
-  font-family: 'Arial', sans-serif; /* Updated font family */
-  padding: 20px;
-  margin: auto;
-  max-width: 800px;
-  color: #444; /* Slightly darker for better readability */
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sleek, modern font */
+  color: black; /* Light text for readability */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
-.resume__section-title {
-  font-size: 1.6em; /* Slightly larger */
-  margin-bottom: 15px;
-  color: #0056b3; /* A bit more color */
+/* Headings should be prominent and have a bit of text-shadow for depth */
+h1, h2, h3 {
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
-.resume__section-content {
-  font-size: 1.1em; /* Slightly larger for readability */
+/* Paragraphs should have higher line-height for readability on dark backgrounds */
+p {
   line-height: 1.6;
+  color: black; /* Slightly lighter text */
 }
 
-/* Style for icons */
-.icon {
-  vertical-align: middle;
-  margin-right: 5px;
-  color: #0056b3; /* Matching the section titles */
+/* Container should have a max-width and centered alignment */
+.container {
+  max-width: auto; /* Keeping the content from stretching too wide */
+  margin: auto; /* Center align the container */
+  padding: 20px; /* Padding around the content */
+  display: flex;
+flex-wrap: wrap;
 }
 
-/* Responsive design improvements */
-@media screen and (max-width: 600px) {
-  .resume {
-    padding: 10px;
-    max-width: 100%;
-  }
-  .resume__section-title {
-    font-size: 1.4em;
-  }
-  /* Additional responsive adjustments as needed */
+
+
+/* Rows should have space between them and align their children centrally */
+.row {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Start align horizontally */
+  margin-bottom: 20px; /* Increased spacing between rows */
 }
 
-/* Print styles */
-@media print {
-  .resume {
-    color: black;
-  }
-  /* Other print-specific styles */
+/* Links should stand out and match the design of the screenshot */
+a {
+  color: #4b8eda; /* Bright blue to stand out on the dark background */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
+
+a:hover {
+  color: #1e81b0; /* Darker blue on hover for interaction feedback */
+}
+
+/* Icons from FontAwesome should be styled to match the design language */
+.fa-icon {
+  color: #4b8eda; /* Same blue as links for consistency */
+  margin-right: 10px; /* Increased spacing for visual comfort */
+}
+
+/* Buttons should have a clear visual style that fits the dark theme */
+.btn {
+  background-color: #4b8eda; /* Matching the icon and link color */
+  color: white;
+  border: none;
+  padding: 10px 20px; /* More padding for a larger clickable area */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  text-transform: uppercase; /* Make the text uppercase for stylistic preference */
+  font-weight: bold; /* Bold text within the button for better visibility */
+}
+
+.btn:hover {
+  background-color: #1e81b0; /* Darker blue on hover for consistency */
+}
+
+/* Improving the overall legibility and visual hierarchy on a dark background */
+h1 {
+  font-size: 2.5em; /* Larger size for main headings */
+}
+
+h2 {
+  font-size: 2em; /* Distinct size for secondary headings */
+}
+
+h3 {
+  font-size: 1.5em; /* Smaller size for tertiary headings */
+}
+
+/* Media query for responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .row {
+    flex-direction: column; /* Stack elements on smaller screens */
+    margin-bottom: 10px; /* Reduce margin on smaller screens */
+  }
+
+  /* Adjust heading sizes for better readability on small screens */
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+}
+

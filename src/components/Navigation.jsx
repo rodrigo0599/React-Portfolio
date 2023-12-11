@@ -25,10 +25,12 @@ function Navbar() {
        </button>
      </div>
      <div className="links">
+     <span class="name">Rodrigo Rivera</span>
      <Link to="/about"> About </Link>
        <Link to="/projects"> Projects </Link>
        <Link to="/contact"> Contact </Link>
        <Link to="/resume"> Resume </Link>
+       
      </div>
    </div>
  );

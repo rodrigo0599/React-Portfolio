@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles/About.css"; 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-//import profileImage from '../assets/profile.jpg'; // Replace with your image path
+
 
 import rod from '../assets/rod.jpg'; // Adjust the path as necessary
 
@@ -11,7 +8,7 @@ function About() {
   return (
     <div className="home">
       <section className="about">
-        <img src={rod} alt="Profile" className="about__image"/>
+        <img src={rod} alt="Profile" className="about__image " />
         
         <p className="about__description ">
         I am a full-stack web developer with a passion for learning and

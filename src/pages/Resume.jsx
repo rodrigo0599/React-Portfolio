@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Resume.css";
+
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import {
     faHtml5,
@@ -13,8 +13,7 @@ import {
   } from "@fortawesome/free-brands-svg-icons";
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faCode, faDatabase, faServer, faFileCode } from '@fortawesome/free-solid-svg-icons';
-  
-
+  import '../styles/Resume.css';
 function Resume() {
     // Dummy data, replace with your actual data
     const FrontEnd
@@ -52,8 +51,11 @@ function Resume() {
             <Row>
                 <Col>
                     <h1>Rodrigo Rivera</h1>
-                    <p>Resume</p>
-                    {/* Contact Information */}
+                    <Row>
+                <Col>
+                    <Button href="https://docs.google.com/document/d/1cKjfufsGhj8kWrZsMlQJP5ho3jsoPBxv7pj2u9wuSF0/edit?usp=sharing" target="_blank">Download Resume</Button>
+                </Col>
+            </Row>
                 </Col>
             </Row>
             <Row>
@@ -92,11 +94,7 @@ function Resume() {
  </Col>
 </Row>
 
-            <Row>
-                <Col>
-                    <Button href="path_to_resume.pdf" target="_blank">Download Resume</Button>
-                </Col>
-            </Row>
+            
         </Container>
     );
 }

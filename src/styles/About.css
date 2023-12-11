@@ -1,102 +1,54 @@
-* {
-  font-family: "Arial", sans-serif;
-}
-.home {
-  width: 100%;
-  align-items: center;
-  font-family: "Arial", sans-serif;
-  color: #3e497a;
-}
-
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
 }
 
-/* Responsive design */
-@media screen and (min-width: 768px) {
+.about__title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333; /* Adjust the color to fit your theme */
+}
+
+.about__description {
+  margin-top: -300px; 
+  font-size: 20px;
+  line-height: 1.5;
+  color: black; /* Adjust the color to fit your theme */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
   .about {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  
+      padding: 10px;
+  }
+
+  .about__title {
+      font-size: 1.5em;
+  }
+
+  .about__description {
+      font-size: 0.9em;
+      
   }
 }
-
-.about h1, .about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #e9d35b; /* Ensure readability */
-  font-size: 4vw; /* Example of responsive font size */
-  margin-right: 5px;
-  padding-bottom: 900px;
-}
-
-/* Other CSS rules... */
-
-.about h1 {
-  font-size: 90px;
-  height: 150px;
-  margin-bottom: 20px;
-
-
-}
-
-
 .about__image {
-  width: 250px; /* Adjust as needed */
+  width: 250px;
   height: auto;
-  border-radius: 100%; /* Circular image */
+  border-radius: 100%;
   margin-bottom: 370px;
 
 }
-.about .prompt {
-  width: 40%;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
 
-.prompt svg {
-  font-size: 60px;
-  margin: 5px;
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Adjust this value to increase or decrease the space between the icons */
+  margin-top: 20px;
+  color: white;
+} 
+.footer__social a {
   color: white;
 }
-
-
-
-.list span {
-  font-size: 20px;
-}
-
-
-
-  .about .prompt, .about .image {
-    width: 80%;
-  }
-
-  .prompt svg {
-    font-size: 40px;
-  }
-
-
-
-
-
-  .about__description {
-    font-size: 25px;
-    text-align: center;
-  }
-  .footer__social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Adjust this value to increase or decrease the space between the icons */
-    margin-top: 20px;
-    color: white;
-  }
-  .footer__social a {
-    color: white;
-  }
-  
