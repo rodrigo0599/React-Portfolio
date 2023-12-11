@@ -19,11 +19,11 @@
 - **Contact:** Offers a contact form with validations for required fields and email addresses.
 - **Resume:** Provides a link to download my resume and lists my proficiencies as a web developer.
 - **Footer:** Includes text and icon links to my GitHub, Facebook, and LinkedIn profiles.
-- **Deployment:** You can access the deployed application on Netlify via [link](link).
+- **Deployment:** You can access the deployed application on Netlify via [https://rodrigo-react-portfolio.netlify.app/about](https://rodrigo-react-portfolio.netlify.app/)
 
 ## Deployed Application
 
-Click the lightning bolt ⚡ [here](link) to go to my React portfolio!
+Click the lightning bolt ⚡ [here]([link](https://rodrigo-react-portfolio.netlify.app/)) to go to my React portfolio!
 
 ## License
 
